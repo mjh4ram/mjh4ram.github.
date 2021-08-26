@@ -1,0 +1,66 @@
+.mdl-layout__header {
+  background-color: transparent !important;
+  color: black !important;
+  box-shadow: none !important;
+}
+
+
+.mdl-layout__content {
+  margin-top: -64px;
+}
+
+.mdl-layout__drawer-button{
+  display: none !important;
+}
+
+.logo-name {
+  color: black;
+  font-family: Inter, "Helvetica Neue", system-ui, sans-serif;
+  font-size: 27px;
+}
+
+.mdl-navigation__link {
+  color: black !important;
+  font-weight: 500 !important;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease 0s;
+}
+
+
+ .loginbutton {
+    line-height: 1.5715;
+    font-weight: 400;
+    text-align: center;
+    background-image: none;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+    cursor: pointer;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    height: 32px;
+    padding: 4px 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    color: black;
+    border: 1px solid black;
+    background: transparent;
+}
+
+.loginbutton:hover {
+  background: black;
+  color: white;
+}
+
+.mdl-dialog__content > form > input {
+  width: 220px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+header {
+  z-index: 100;
+}
+
+.mdl-button--raised.mdl-button--colored {
+    background: none !important;
+    border-radius: 0 !important;
+    color: white !important;
+}
