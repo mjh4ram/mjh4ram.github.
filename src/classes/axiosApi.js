@@ -4,6 +4,7 @@ import UserStore from './userstore';
 
 const axiosInstance = axios.create({
     baseURL: 'http://ec2-18-117-71-37.us-east-2.compute.amazonaws.com:8080/api/',
+    // baseURL: 'http://localhost:8000/api/',
     timeout: 5000,
 });
 
@@ -13,7 +14,7 @@ axiosInstance.interceptors.response.use(
     error => {
       const originalRequest = error.config;
 
-      if (error.response.status === 401 && error.response.statusText === "Unauthorized") {
+      if (error.status != undefined && error.response.status === 401 && error.response.statusText === "Unauthorized") {
         UserStore.isLoggedIn = false;
         UserStore.username = null;
         sessionStorage.clear();

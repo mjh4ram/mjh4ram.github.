@@ -2,10 +2,9 @@ import React, { useRef, useEffect, useState } from "react";
 import { createChart } from 'lightweight-charts';
 import axiosInstance from "../../classes/axiosApi";
 import UserStore from "../../classes/userstore";
+import { observer } from 'mobx-react-lite';
 
-function Chart(props) {
-  // const [data, setData] = useState([]);
-
+const Chart = observer((props) => {
   const getData = async(areaSeries) => {
       try {
         var lastdate = 1;
@@ -112,6 +111,8 @@ function Chart(props) {
       </div>
     </div>
   );
-}
+
+});
+
 
 export default Chart;

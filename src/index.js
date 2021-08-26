@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Auth from './components/LogIn/Auth';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -19,9 +18,6 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/">
         <App/>
-      </Route>
-      <Route exact path="/auth">
-        <Auth/>
       </Route>
     </Switch>
   </Router>,
