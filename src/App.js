@@ -53,7 +53,7 @@ function App() {
         UserStore.isLoggedIn = true;
         UserStore.username = email;
         UserStore.token = newtoken;
-        window.location.href = "https://nami.guru";
+        window.location.href = "http://nami.guru";
       } catch (error) {
           throw error;
       }
