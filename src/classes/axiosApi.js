@@ -3,8 +3,7 @@ import UserStore from './userstore';
 
 
 const axiosInstance = axios.create({
-    baseURL: 'http://ec2-18-117-71-37.us-east-2.compute.amazonaws.com:8080/api/',
-    // baseURL: 'http://localhost:8000/api/',
+    baseURL: 'https://aslkdfjasljdfl.info/api/',
     timeout: 5000,
 });
 
